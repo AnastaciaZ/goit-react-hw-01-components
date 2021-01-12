@@ -1,0 +1,18 @@
+.TransactionHistory {
+  margin: 20px;
+  padding: 20px;
+  width: 340px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.Title {
+  background-color: rgb(0, 225, 255);
+  height: 40px;
+  border: solid 0.5px rgba(218, 216, 216, 0.966);
+}
+.History {
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  border: solid 0.5px rgba(218, 216, 216, 0.966);
+}
