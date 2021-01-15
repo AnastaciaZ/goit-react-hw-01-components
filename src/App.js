@@ -1,14 +1,14 @@
 import Profile from './components/Profile/Profile';
-import user from './components/Profile/user.json';
+import user from './data/user.json';
 //import Section from './components/Section';
 import Statistics from './components/Statistics/Statistics';
-import statisticalData from './components/Statistics/statistical-data.json';
+import statisticalData from './data/statistical-data.json';
 
 import FriendList from './components/FriendList/FriendList';
-import friends from './components/FriendList/friends.json';
+import friends from './data/friends.json';
 
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
-import transactions from './components/TransactionHistory/transactions.json';
+import transactions from './data/transactions.json';
 
 function App() {
   return (
@@ -19,9 +19,6 @@ function App() {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
       />
       <Statistics title="Upload stats" stats={statisticalData} />
       <Statistics stats={statisticalData} />
@@ -32,33 +29,3 @@ function App() {
 }
 
 export default App;
-
-//=========
-
-/*
-
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;*/

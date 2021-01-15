@@ -13,8 +13,10 @@ const TransactionHistory = ({ items }) => {
       </thead>
       <tbody>
         {items.map(item => (
-          <tr key={item.id}>
-            <td className={s.History}>{item.type}</td>
+          <tr className={s.HistoryRow} key={item.id}>
+            <td className={s.History}>
+              {item.type.slice(0, 1).toUpperCase() + item.type.slice(1)}
+            </td>
             <td className={s.History}>{item.amount}</td>
             <td className={s.History}>{item.currency}</td>
           </tr>
@@ -28,6 +30,9 @@ TransactionHistory.propType = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.number.isRequired,
+      currency: PropTypes.string.isRequired,
     }),
   ),
 };
